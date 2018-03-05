@@ -26,7 +26,8 @@ module.exports = (bp, app) => {
         menuIcon: module.settings.menuIcon || 'view_module',
         noInterface: !!module.settings.noInterface,
         moduleView: module.settings.moduleView || { stretched: false },
-        plugins: module.settings.plugins || []
+        plugins: module.settings.plugins || [],
+        options: module.configuration.options || {}
       }
     })
     res.send(modules)
